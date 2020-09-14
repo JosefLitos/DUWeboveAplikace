@@ -1,0 +1,14 @@
+.active {
+	background-color: white;
+	color: black;
+	font-size: 50px;
+}
+.inactive {
+	background-color: black;
+	color: white;
+	font-size:50px;
+	text-decoration:none;
+}
+#f {padding:0 9.3%;}
+#s {padding:0 9.35%;}
+#t {padding:0 9.3%;}

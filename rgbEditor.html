@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html style="height:100%;" lang:"cs-CZ">
+  <head>
+    <title>RGB Barvový editor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      p {
+        text-align:center;
+      }
+      input {
+        height:0px;
+        margin:0px 10px;
+      }
+      .setter {
+        border:2px solid black;
+        margin:3px 0;
+      }
+    </style>
+  </head>
+  <body>
+  <div style="padding:10px;background-color:#bbbbbb;">
+<p id="color" style="padding: 30px; margin: 20px;"></p>
+    <div class="w3-row w3-container" style="margin:0 auto;display:table;">
+    <div class="setter" style="background-color:#ff000033;">
+      <p>RED</p>
+      <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="red" value="255" min="0" max="255">
+      <p id="redVal"></p>
+    </div>
+    <div class="setter" style="background-color:#00ff0033;">
+      <p>GREEN</p>
+      <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="green" value="99" min="0" max="255">
+      <p id="greenVal"></p>
+    </div>
+    <div class="setter" style="background-color:#0000ff33;">
+      <p>BLUE</p>
+      <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="blue" value="71" min="0" max="255">
+      <p id="blueVal"></p>
+    </div>
+  </div>
+  <noscript>Sorry, but JavaScript is not enabled.</noscript>
+  <script>
+  const color = document.getElementById("color");
+  changeRGB();
+  function changeRGB() {
+  	const r = document.getElementById("red").value;
+  	const g = document.getElementById("green").value;
+  	const b = document.getElementById("blue").value;
+    document.getElementById("redVal").innerHTML = r;
+    document.getElementById("greenVal").innerHTML = g;
+    document.getElementById("blueVal").innerHTML = b;
+    color.innerHTML = "rgb(" + r + ", " + g + ", " + b + ")";
+    color.style.backgroundColor = color.innerHTML.trim();
+  }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>ez</title>
+		<style>
+  table, th, td {
+   border-collapse:collapse;
+   border:1px solid black;
+   padding:10px;
+  }
+  th {
+   color:white;
+   background-color:black;
+  }
+  tr:nth-child(odd) {
+   background-color:#e8e8e8aa;
+  }
+  tr:nth-child(even) {
+    background-color:#ffffffaa;
+  }
+  .first {
+   text-align:center;
+  }
+  tr:nth-child(odd).girls {
+    background-color:#f2dadaaa;
+  }
+  tr:nth-child(even).girls {
+    background-color:#ffeaeaaa;
+  }
+  tr.done {
+  	 color:#777;
+  }
+  body {
+  	 background:url("bg.jpg") no-repeat center;
+  }
+  
+  
+		</style>
+	</head>
+	<body>
+		<table cellspacing="0px" style="margin:auto;">
+			<tbody>
+				<tr>
+					<th class="first">Vznik</th>
+					<th>Název</th>
+					<th>Ref</th>
+					<th>Herec</th>
+				</tr>
+				<tr class="done">
+					<td class="first">1991</td>
+					<td>Americký Shaolin</td>
+					<td>
+						<a href="https://uloz.to/file/Bogj7rx6N/american-shaolin-king-of-the-kickboxers-2-pres-multiload-cz-avi">0,75</a>
+					</td>
+					<td>Daniel Dae Kim</td>
+				</tr>
+				<tr>
+					<td class="first">2012</td>
+					<td>Underworld: Awakening</td>
+					<td>
+						<a href="https://uloz.to/file/DuVgtrtWeIuR/underworld-4-probuzeni-underworld-awakening-2012-720p-x264-1024x464-cz-dabing-m4v">1,4</a>
+					</td>
+					<td>Theo James</td>
+				</tr>
+				<tr>
+					<td class="first">2016</td>
+					<td>Underworld: Blood Wars</td>
+					<td>
+						<a href="https://uloz.to/file/LAQTwbTMfJTQ/underworld-blood-wars-2016-1080p-webrip-x264-aac-etrg-mp4">1,4</a>
+					</td>
+					<td>Theo James</td>
+				</tr>
+				<tr class="done">
+					<td class="first">2016</td>
+					<td>War on Everyone</td>
+					<td>
+						<a href="https://uloz.to/file/8uZ3J0MucJ5O/war-on-everyone-2016-hd-avi">0,75</a>
+					</td>
+					<td>Theo James</td>
+				</tr>
+				<tr class="girls done">
+					<td class="first">2014</td>
+					<td>White Bird in a Blizzard</td>
+					<td>
+						<a href="https://uloz.to/file/jpcmJ4qRsYa9/white-bird-in-a-blizzard-2014-vosmovies-org-mkv">1,5</a>
+					</td>
+					<td>Shailene Woodley</td>
+				</tr>
+				<tr class="girls done">
+					<td class="first">2013</td>
+					<td>The Spectacular Now (Kouzlo přítomného okamžiku)</td>
+					<td>
+						<a href="https://uloz.to/file/njkuY7XpZCWI/the-spectacular-now-cz-titulky-avi">0,86</a>
+					</td>
+					<td>Shailene Woodley</td>
+				</tr>
+				<tr class="girls done">
+					<td class="first">2011</td>
+					<td>The Descendants (Moje děti)</td>
+					<td>
+						<a href="https://uloz.to/file/E4GYdCvpbCEr/the-descendants-2011-720p-bluray-x264-h3llrais3rz-mp4">0,78</a>
+					</td>
+					<td>Shailene Woodley</td>
+				</tr>
+				<tr class="girls done">
+					<td class="first">2014</td>
+					<td>The Fault in Our Stars (Hvězdy nám nepřály)</td>
+					<td>
+						<a href="https://uloz.to/file/nNLoFdEEG/the-fault-in-our-stars-2014-1080p-bluray-x264-yify-mp4">2,1</a>
+					</td>
+					<td>Shailene Woodley</td>
+				</tr>
+				<tr class="done">
+					<td class="first">2017</td>
+					<td>Baby Driver</td>
+					<td>
+						<a href="https://uloz.to/file/KY4Qdpr6hvYI/rubinmusicbox-baby-driver-2017-1080p-bluray-x264-mp4">1,8</a>
+					</td>
+					<td>Ansel Elgort</td>
+				</tr>
+				<tr class="done">
+					<td class="first">2014</td>
+					<td>Whiplash</td>
+					<td>
+						<a href="https://uloz.to/file/UKE2vmtFt/whiplash-2014-bdrip-x264-fullhd-ac3-cz-dab-2000-bigbob-mkv">1,7</a>
+					</td>
+					<td>Miles Teller</td>
+				</tr>
+				<tr class="done">
+					<td class="first">2015</td>
+					<td>Er ist wieder da</td>
+					<td>
+						<a href="https://uloz.to/file/b1Y789GZa/er-ist-wieder-da-titulky-cz-avi">1,9</a>
+					</td> 
+					<td>Oliver Masucci</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+
+		<audio id="audio" controls="controls">
+			<source src="humoresque.mp3" type="audio/mpeg">err</source>
+		</audio>
+		<button id="btn" onclick="vol()" style="font-size:130%;border:4px double olive;background-color:darkgreen;width:200px;height:40px;text-align:left;margin:auto;">Volume</button>
+		<script>
+    var a = document
+   .getElementById("audio");
+   a.currentTime = 90;
+   var min = false;
+   function vol() {
+    if (min) {
+     if (a.volume > 0.9) min = false;
+    } else if (a.volume < 0.1) min = true;
+   if (min) a.volume = a.volume + 0.2;
+   else a.volume = a.volume - 0.2;
+   document.getElementById("btn").innerHTML = a.volume;
+   }
+		</script>
+		
+		<iframe src="rgbEditor.html" style="border:none;margin:20px;height:400px"></iframe>
+		
+		<embed src="Lesní studánka.txt" type="text/html" style="background-color:#ffffffaa;border:solid 5px black;margin:20px auto;" ></embed>
+	</body>
+</html>
