@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Elon Musk",
+    "img": "https://picsum.photos/seed/t/200",
+    "email": "elon.musk@volny.cz",
+    "tel": "+420 777 123 456"
+  },
+  {
+    "id": 2,
+    "name": "Bill Gates",
+    "img": "https://picsum.photos/seed/ve/200",
+    "email": "bill.gates@atlas.cz",
+    "tel": "+420 602 123 000"
+  },
+  {
+    "id": 3,
+    "name": "UwU",
+    "img": "https://ih1.redbubble.net/image.674718866.9820/raf,360x360,075,t,fafafa:ca443f4786.jpg",
+    "email": "anime@planet.to",
+    "tel": "+999 999 999 999"
+  }
+]
